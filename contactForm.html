@@ -10,21 +10,25 @@
   <form>
     <div class="clear-right">
       <label for="name">Imię: </label>
-      <input name="name" type="text" />
+      <input name="name" type="text"/>
     </div>
     <div class="clear-right">
       <label for="email">Email: </label>
-      <input name="email" type="email" />
+      <input name="email" type="email"/>
     </div>
     <div class="clear-right">
       <label for="tel">Numer tel.: </label>
-      <input name="tel" type="tel" />
+      <input name="tel" type="text" pattern="/^[\.-)( ]*([0-9]{3})[\.-)( ]*([0-9]{3})[\.-)( ]*([0-9]{4})$/" required />
     </div>
     <div class="clear-right">
       <label for="date">Data urodzenia: </label>
       <input name="date" type="date" />
     </div>
-    <input type="submit" />
+    <div class="clear-right">
+      <label for="amount">Kwota: </label>
+      <input name="amount" type="number" min=1 disabled/>
+    </div>
+    <input type="submit"  class="submit"/>
   </form>
 </body>
 </html>

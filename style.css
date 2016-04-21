@@ -9,3 +9,18 @@ nav.context{
 .context{
   background:green;
 }
+
+input{
+  padding:12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.clear-right{
+  float:left;
+  clear:right;
+  width:100%;
+}
+.submit{
+  float:left;
+}
